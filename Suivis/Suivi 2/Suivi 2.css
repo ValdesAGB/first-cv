@@ -1,0 +1,115 @@
+.Section1
+{
+    background-color: #505662;
+    height: 250px;
+}
+.Section1 div
+{
+    padding-top: 20px;
+}
+.Section1 h1, h4, h5
+{
+    color: white;
+    margin-left: 10%;
+    width: 600px;
+}
+.Section1 h1
+{
+    font-size: 3rem;
+}
+.Section1 h4
+{
+    font-size: 1rem;
+    font-weight: normal;
+}
+.Section1 h5
+{
+    font-size: 1em;
+    font-weight: normal;
+}
+.Section1 span
+{
+    color: green;
+}
+
+
+
+
+.Section2
+{
+    margin-left: 11.5%;
+    margin-top: 25px;
+}
+.Section2 h2
+{
+    margin-left: 25%;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Section2 ul li
+{
+    font-weight: normal;
+    list-style-type: circle;
+    margin-bottom: 10px;
+}
+
+
+.Section3
+{
+    /* text-align: center; */
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px black;
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    background-color: white;
+    width: 300px!important;
+}
+.Section3 video
+{
+    margin-top: 25px;
+    margin-left: 12px;
+    width: 90%;
+    height: 200px;
+    border-radius: 5px;
+}
+.Section3 h5
+{
+    margin-left: 50px!important;
+    color: black;
+}
+.Section3 ul li
+{
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+.Section3 div
+{
+    text-align: center;
+    border: none;
+    margin-left: 15%;
+    background-color: #f41767;
+    border-radius: 50px;
+    width: 195px;
+    height: 25px;
+}
+.Section3 div a
+{
+    padding-top: 50px!important;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+}
+.Section3 div a:hover
+{
+    color: white;
+}
+.Section3 h6
+{
+    margin-left: 3%;
+    color: black;
+    margin-top: 10px;
+    font-size: 0.8em;
+}

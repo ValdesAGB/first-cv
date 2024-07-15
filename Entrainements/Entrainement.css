@@ -1,0 +1,65 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    width: 100%;
+    height: 75px;
+    background-color: cadetblue;
+}
+
+header >nav >ul >li
+{
+    list-style: none;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    line-height: 75px;
+}
+
+header >nav >ul >li >a
+{
+    text-decoration: none;
+    color: cornsilk;
+    text-transform: uppercase;
+}
+
+header >nav >ul >li:hover
+{
+    background-color: darkkhaki;
+}
+
+.Propos
+{
+    position: absolute;
+    display: none;
+    background-color: darkslategray;
+    width: 33%;
+    
+}
+
+.Propos li
+{
+    list-style: none;
+}
+
+.Propos li a
+{
+    color: floralwhite;
+    text-decoration: none;
+}
+
+header >nav >ul >li:hover .Propos
+{
+    display: block;
+}
+
+.Propos li:hover
+{
+    background-color: hotpink;
+}
+
+

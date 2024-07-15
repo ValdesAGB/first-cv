@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcultrice</title>
+</head>
+<body>
+   <!-- <script>
+       var Valeur1 = parseInt(prompt("Entrez le premier nombre"))
+       var Signe = parseInt(prompt("Chosisez : \n 1- Pour Addictioin; \n2- Pour soustraction; \n3-Pour Multiplication; \n4- Pour Division"))
+       var Valeur2 = parseInt(prompt("Entrez le deuxieme nombre"))
+
+       if (Signe == 1){
+           let Resultat = Valeur1 + Valeur2
+           document.write(Valeur1 + "+" + Valeur2 +"=" + Resultat)
+       }
+
+       if (Signe == 2){
+           let Resultat = Valeur1 - Valeur2
+           document.write(Valeur1 + "-" + Valeur2 +"=" + Resultat)
+       }
+
+       if (Signe == 3){
+           let Resultat = Valeur1 * Valeur2
+           document.write(Valeur1 + "*" + Valeur2 +"=" + Resultat)
+       }
+
+       if (Signe == 4){
+           let Resultat = Valeur1 / Valeur2
+           document.write(Valeur1 + "/" + Valeur2 +"=" + Resultat)
+       }
+   
+   </script>  -->
+<script>
+    var Valeur1 = parseInt(prompt("Entrez le premier nombre"))
+    var Signe = parseInt(prompt("Chosisez : \n 1- Pour Addictioin; \n2- Pour soustraction; \n3-Pour Multiplication; \n4- Pour Division"))
+    var Valeur2 = parseInt(prompt("Entrez le deuxieme nombre"))
+    
+
+    switch(Signe) {
+        case 1:
+        var Resultat = Valeur1 + Valeur2
+        document.write(Valeur1 + "+" + Valeur2 +"=" + Resultat)
+        break;
+
+        case 2:
+        var Resultat = Valeur1 - Valeur2
+        document.write(Valeur1 + "-" + Valeur2 +"=" + Resultat)
+        break;
+
+        case 3:
+        var Resultat = Valeur1 * Valeur2
+        document.write(Valeur1 + "*" + Valeur2 +"=" + Resultat)
+        break;
+
+        case 4:
+        var Resultat = Valeur1 / Valeur2
+        document.write(Valeur1 + "/" + Valeur2 +"=" + Resultat)
+        break;
+
+        default:
+        alert("Entrez un donné")
+        
+    }
+
+</script>
+
+</body>
+</html>

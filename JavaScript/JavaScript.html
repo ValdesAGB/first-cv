@@ -1,0 +1,109 @@
+<script>
+    var Pseudo = prompt("Quel est votre pseudo.?")
+    alert ("Bienvenue " + Pseudo)
+    var NbreMacBook = parseInt(prompt("Entrez le nom de MacBook que vous voulez:"))
+    var NbreWifi = parseInt(prompt("Entrez le nom de Wifi que vous voulez:"))
+    var NbreHP = parseInt(prompt("Entrez le nom de Bureautique que vous voulez:"))
+    var InitialHT = 0
+    var InitialTTC = 0
+
+    // Déclaration du prix unitaire de chaque élément
+
+    var PrixUnitaireMacBook = 450000
+    var PrixUnitaireWifi = 120000
+    var PrixUnitaireHP = 245000
+
+    
+    
+    // MacBook
+        let MontantReductionMacBook = (PrixUnitaireMacBook * NbreMacBook) * 0.05
+        // var MontantReductionMacBook = (PrixUnitaireMacBook*3)*0.05
+        if (NbreMacBook >= 3){
+            var PrixDeMacBook = (PrixUnitaireMacBook*NbreMacBook) - MontantReductionMacBook
+            document.write("<h1>Prix MacBook:" + PrixDeMacBook + " FCFA. Vous avez bénéficiez de 5% sur l'ensemnle des MacBook achetés</h1>")
+        } else{
+            var PrixDeMacBook = PrixUnitaireMacBook*NbreMacBook
+            document.write("<h1> Prix MacBook:" + PrixDeMacBook + " FCFA</h1>")
+        }
+
+        // Prix par rapport aux 3 MacBooks
+        // var MontantReductionMacBook = (PrixUnitaireMacBook*3)*0.05
+        // var PrixDe3MacBook = (PrixUnitaireMacBook*3) - MontantReductionMacBook    
+
+        // Prix total des 5 MacBooks
+
+       
+    // Routeurs Wifi
+
+       let MontantReductionWifi = (PrixUnitaireWifi * NbreWifi) * 0.12
+        // var MontantReductionWifi = (PrixUnitaireWifi*3)*0.12
+        if (NbreWifi >= 3){
+            var PrixDeWifi = (PrixUnitaireWifi*NbreWifi) - MontantReductionWifi
+            document.write("<h1>Prix Bureautique WIFI: " + PrixDeWifi + " FCFA. Vous avez bénéficiez de 12% sur l'ensemnle des WIFI achetés</h1>")
+        }else
+        {
+            var PrixDeWifi = PrixUnitaireWifi*NbreWifi
+            document.write ("<h1> Prix WIFI: " + PrixDeWifi + " FCFA </h1>")
+        }
+    
+        // // Prix Par rapport aux 3 routeurs Wifi
+        // var MontantReductionWifi = (PrixUnitaireWifi*3)*0.12
+        // var PrixDe3Wifi = (PrixUnitaireWifi*3) - MontantReductionWifi
+        
+        // //Prix par rapport 4 routeurs Wifi
+        // var PrixDe4Wifi = PrixUnitaireWifi + PrixDe3Wifi
+
+
+    //  Bureatique
+
+         
+        if (NbreMacBook + NbreWifi + NbreHP >= 10 ){
+            let MontantReductionHP = (PrixUnitaireHP * NbreHP) * 0.3
+            var PrixDeHP = (PrixUnitaireHP * NbreHP) - MontantReductionHP
+            document.write("<h1>Prix Bureautique HP: " + PrixDeHP + " FCFA. Vous avez bénéficiez de 30% sur l'ensemnle des bureautiques achetés</h1>")
+        }else{
+            let MontantReductionHP = (PrixUnitaireHP * NbreHP) * 0.2
+            var PrixDeHP = (PrixUnitaireHP * NbreHP) -MontantReductionHP
+            document.write("<h1>Prix Bureautique HP: " + PrixDeHP + " FCFA. Vous avez bénéficiez de 20% sur l'ensemnle des bureautiques achetés</h1>")
+        }
+
+
+    // Prix hors taxes (HT)
+        var ValeurHT = InitialHT + PrixDeMacBook + PrixDeWifi + PrixDeHP
+        document.write ("<h1> Valeur Hors Taxe (HT): " + ValeurHT + " FCFA </h1>")
+
+    // Prix avec taxes (TTC)
+
+        // Montant du taux par rapport au montant HT
+        var MontantTTCAAjouter = ValeurHT*0.036     
+
+        // Valeur TTC
+        var ValeurTTC = InitialTTC + ValeurHT + MontantTTCAAjouter
+
+        document.write ("<h1> Valeur Avec Taxe (TTC): " + ValeurTTC + " FCFA </h1>")
+
+
+    //     // Le nombre d'articles achetés est égal à 10 donc pour le prix du bureautique on aura une réduction de 30%
+    //     var MontantReductionHP = PrixUnitaireHP*0.3
+
+    //     // Prix du bureautique
+    //     var PrixDeHP = PrixUnitaireHP - MontantReductionHP    
+
+
+    // // Prix hors taxes (HT)
+    //     var ValeurHT = InitialHT + PrixDe5MacBook + PrixDe4Wifi + PrixDeHP
+        
+    // // Prix avec taxes (TTC)
+
+    //     // Montant du taux par rapport au montant HT
+    //     var MontantTTCAAjouter = ValeurHT*0.036     
+
+    //     // Valeur TTC
+    //     var ValeurTTC = ValeurHT + MontantTTCAAjouter
+
+    // console.log ("Prix des 5 MacBook:" + PrixDe5MacBook + "FCFA")
+    // console.log ("Prix des 4 Wifi:" + PrixDe4Wifi + "FCFA")
+    // console.log ("Prix du Bureautique:" + PrixDeHP + "FCFA")
+    // console.log ("Valeur Hors Taxe (HT):" + ValeurHT + InitialHT + "FCFA")
+    // console.log ("Valeur Avec Taxe (TTC):" + ValeurTTC + InitialTTC + "FCFA")
+</script>
